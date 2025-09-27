@@ -212,6 +212,7 @@ CREATE TABLE Pedidos (
 - Use VIEWS para simular desnormalização
 - Meça e performance antes de decidir
 
+<br>
 
 > <br>
 > 
