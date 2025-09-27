@@ -1,9 +1,26 @@
-# 🏡 Atividades Assíncronas (para casa) 
+# 🏡 Atividades Assíncronas
 
 ## 1. Pesquisa sobre SGBDs Pesquisar outros SGBDs além do PostgreSQL (MySQL, Oracle, SQL Server, SQLite) e escrever 1 parágrafo sobre um deles, incluindo: 
 - Principais características 
 - Casos de uso típicos 
 - Vantagens e desvantagens 
+
+### SGBDs Relacionais Tradicionais (servidor independente)
+- PostgreSQL
+- MySQL / MariaDB
+- Oracle Database
+- Microsoft SQL Server
+- IBM Db2
+
+### SGBDs Relacionais Embarcados (via biblioteca)
+- SQLite
+- Firebird
+
+### Sistemas de Gerenciamento de Banco de Dados (SGBDs)
+Do inglês, Data Base Management System (DBMS), são sistemas resposáveis pelo gerenciamento de um ou mais Banco de Dados, com o principal objetivo de retirar a responsabilidade da aplicação cliente gerenciar o acesso, a persistência, a manipulação e a organização dos dados. De modo geral, SGDBs realacionais disponibilizam uma interface possibilitanto a inclusão, alteração ou consulta nos dados previamente armazenados.
+
+Como um dos BDs mais poulares do mundo, o MySQL é conhecido pela simplicidade e pelo bom desempenho em app web. É muito usado no ecossistema LAMP (Linux, Apache, MySQL, PHP/Python), sendo a base de plataformas como WordPress e Magento. Tem como vantagens a facilidade de instalação, suporte em quase todo serviço de hospedagem e uma comunidade gigantesca. Em contrapartida, suas limitações ficam evidentes em situações e cenários onde há necessiadde de consultas analíticas mais avançadas, recursos sofisticados de integridade e alto nível de consistencia, dos quais quem se destaca é o PostgreSQL.
+
 
 <br>
 
@@ -141,10 +158,21 @@ ORDER BY cat.nome, prod.nome;
 <br>
 
 ## 4. Leitura Complementar Ler o capítulo introdutório do livro *Use a Cabeça! SQL* ou artigos do W3Schools sobre SQL. 
+*Iniciado W3Scholl, ainda não adquiri o livro*
 
 <br>
 
-## 5. Reflexão Crítica Escrever um texto de 1 página sobre: "Quando usar SQL/Banco de Dados vs. Planilha Excel? Quais as vantagens e limitações de cada abordagem?" 
+## 5. Reflexão Crítica Escrever um texto de 1 página sobre: "Quando usar SQL/Banco de Dados vs. Planilha Excel? Quais as vantagens e limitações de cada abordagem?"
+
+### Reflexão Crítica: SQL vs. Excel
+
+Ao longo do aprendizado em banco de dados, fica evidente que tanto o SQL quanto o Excel têm seu espaço e importância, mas são ferramentas diferentes, cada uma mais adequada a certos contextos.
+
+O Excel é uma ferramenta extremamente prática quando precisamos lidar com pequenas quantidades de dados, explorar informações de maneira visual e rápida ou criar análises pontuais. Ele é ótimo para quem não tem conhecimento técnico avançado, porque permite trabalhar com fórmulas, gráficos e filtros sem precisar programar nada. Essa facilidade explica porque o Excel ainda é onipresente em empresas: serve para relatórios, controle pessoal, planilhas de orçamento, análises exploratórias e até prototipagem de modelos. A limitação aparece quando os dados crescem demais. Planilhas ficam lentas, difíceis de manter e propensas a erros manuais, já que não existe um mecanismo de integridade forte. Também não é adequado para cenários de multiusuário, porque vários acessos ao mesmo tempo causam conflito.
+
+Já um Banco de Dados SQL é construído para lidar com grandes volumes de informação, com integridade, segurança e consistência. Ele permite armazenar milhões de registros sem perda de performance significativa, trabalhar com relacionamentos entre tabelas e garantir que não existam duplicatas ou dados incoerentes, através de constraints e chaves. Outro ponto crucial é o multiusuário: diversos sistemas e pessoas podem acessar o mesmo banco simultaneamente, sem corromper informações. Além disso, bancos de dados suportam automações, integrações e análises muito mais robustas do que uma planilha. A desvantagem é que demandam conhecimento técnico maior para serem usados e configurados, o que pode ser uma barreira para quem precisa apenas de algo rápido e simples.
+
+Portanto, a escolha entre Excel e SQL não é sobre qual é “melhor”, mas sobre o contexto. Se o objetivo é algo individual, exploratório e de pequeno porte, o Excel é rápido e direto. Mas quando falamos de sistemas em produção, dados corporativos ou informações críticas que precisam de consistência, escalabilidade e segurança, os bancos de dados são indispensáveis. No fundo, muitas vezes os dois coexistem: bancos de dados armazenam a informação de forma estruturada e segura, enquanto planilhas são usadas para visualizar e analisar recortes desses dados.
 
 <br>
 
