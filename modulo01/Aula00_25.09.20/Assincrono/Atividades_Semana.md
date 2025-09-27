@@ -181,3 +181,5 @@ Portanto, a escolha entre Excel e SQL não é sobre qual é “melhor”, mas so
 - Criar 5 consultas diferentes 
 - Documentar insights encontrados
 
+
+> Constrans sçao as regras
