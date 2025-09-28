@@ -1,21 +1,19 @@
-version: "3.9"
-
 services:
   postgres:
     image: postgres:16
     container_name: aulas_db
     restart: unless-stopped
     ports:
-      - "${POSTGRES_PORT_AULAS:-5433}:5432"   # expõe 5433 no host (não conflita com a POC 5434)
+      - "${POSTGRES_PORT:-5433}:5432"   # expõe 5433 no host (não conflita com a POC 5434)
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-      POSTGRES_DB: ${POSTGRES_DB_AULAS}
+      POSTGRES_DB: ${POSTGRES_DB}
       PGDATA: /var/lib/postgresql/data/pgdata
     volumes:
       - ./db_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB_AULAS}"]
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
       interval: 10s
       timeout: 5s
       retries: 5
