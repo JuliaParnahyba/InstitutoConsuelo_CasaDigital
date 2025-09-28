@@ -181,5 +181,50 @@ Portanto, a escolha entre Excel e SQL não é sobre qual é “melhor”, mas so
 - Criar 5 consultas diferentes 
 - Documentar insights encontrados
 
+<br>
 
-> Constrans sçao as regras
+---
+
+<br>
+
+### Constraints
+
+> Constraints são restrições, ou seja, regras que são definidas em uma tabela para garantir integridade e consistência dos dados. São uma espécie de "regras de trânsito" dos BDs, que impedem que os dados "dirijam na contramão" e baguncem a integridade do sistema.
+
+1. Evitam que dados inválidos entrem no banco.
+2. Mantêm relações corretas entre tabelas.
+3. Forçam que certas condições sempre sejam respeitadas.
+
+<br>
+
+### Principais tipos de constranits
+1. `PRIMARY KEY`
+    - Identificar único.<br>
+    Exemplo: `id SERIAL PRIMARY KEY`
+2. `FOREIGN KEY`
+    - Liga uma tabela a outra (chave estrangeira).<br>
+    Exemplo: `categoria_id INT REFERENCES categoria(id)
+3. `NOT NULL`
+    - Obriga o campo a ter valor, não pode ficar vazio.<br>
+    Exemplo: `nome VARCHAR(50) NOT NULL`
+4. `UNIQUE`
+    - Garante que não existam valores repetidos em uma coluna ou em uma combinação de colunas.<br>
+    Exemplo: `UNIQUE (marca, modelo)`
+5. `CHECK`
+    - Valida condições personalizadas.<br>
+    Exemplo: `preco NUMERIC(10,2) CHECK (preco >= 0)`
+6. `DEFAULT`
+    - Define um valor padrão caso nenhum seja informado.<br>
+    Exemplo: `estoque INTEGER DEFAULT 0`
+
+<br>
+
+```sql
+CREATE TABLE produtos (
+    id SERIAL PRIMARY KEY, -- cada produto tem um id único
+    nome VARCHAR(50) NOT NULL, -- nome é obrigatório
+    preco NUMERIC(10,2) CHECK (preco >= 0), -- preço nunca pode ser negativo
+    estoque INTEGER DEFAULT 0, -- estoque começa em 0 se não for informado
+    codigo VARCHAR(20) UNIQUE -- código não pode ser repedito
+);
+```
