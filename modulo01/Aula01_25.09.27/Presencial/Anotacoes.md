@@ -4,16 +4,18 @@
 ```sql
 CREATE TABLE Pedidos (
     pedido_id INT, -- Sem serial e indicação de chaev primária
-    cliente_nome VARCHAR(100), -- Ideials eria dividir entre nome e sobrenome, não referencia uma tabela de clientes
-    produtos_comprados VARCHAR(500), -- Muito longo e não referencia a tabela de produtos, por exemplo
-    telefones VARCHAR (200), -- muito longo e pode se tornar confuso
-    vendedor_nome VARCHAR(100), -- segue a mesma lógica do cliente_nome
-    comissao DECIMAL(5,2) 
+    cliente_nome VARCHAR(100), -- Ideial seria dividir entre nome e sobrenome, não referencia uma tabela de clientes
+    produtos_comprados VARCHAR(500), -- Múltiplos valores e não referencia a tabela de produtos, por exemplo
+    telefones VARCHAR (200), -- Múltiplos valores e pode se tornar confuso
+    vendedor_nome VARCHAR(100), -- Segue a mesma lógica do cliente_nome, depende do produto
+    comissao DECIMAL(5,2) -- Depende do vendedor
 )
 ```
 
 ## Normalização de Dados
-Significa que iremos trazer os dados para uma norma, isto é, aquilo que dita as boas práticas e que podem ser investigadas em livros.
+Processo de estruturação das tables para reduzir redundâncis e inconsistência, possibilitando integridade dos dados, consistência e clareza no modelo. Porém pode gerar consultas mais complexas.
+
+Ao normalizar, significa dizer que iremos trazer os dados para uma norma, isto é, aquilo que dita as boas práticas e que podem ser investigadas em livros.
 
 **Níveis**: São 10 níveis de regra, dos quais veremos 3 regras.
 
@@ -21,7 +23,7 @@ Significa que iremos trazer os dados para uma norma, isto é, aquilo que dita as
 
 ### Primeira Forma Normal (1FN)
 > Cada célula = **UM** valor atômico <br>
-> cada atributo pode ter apenas um valor por registro (tupla).
+> cada atributo pode ter apenas um valor por registro.
 
 <br>
 
@@ -46,14 +48,17 @@ CREATE TABLE Clientes (
 );
 
 CREATE TABLE TelefoneCliente(
-
+    TelefoneID INT PRIMARY KEY,
+    ClienteID INT,
+    Telefone VARCHAR(20),
+    FOREIGN KEY (ClienteID) REFERENCES Clientes(clienteID)
 );
 ```
 
 <br>
 
 ### Segunda Forma Normal (2FN)
-Deve estar adequada à 1FN e todos os atributos não chave primária puderem ser obtidos da combinação de todos os atributos que formam a chave primária. 
+É quando está adequada à 1FN e todos os atributos não chave primária puderem ser obtidos da combinação de todos os atributos que formam a chave primária. 
 
 ```sql
 -- Viola 2FN - NomeAluno depende só de AlunoID, não da chave completa
@@ -144,8 +149,7 @@ CREATE TABLE PedidosProblematicos (
     EnderecoCompleto VARCHAR(300) -- REGRA 1FN
 
     -- ComissaoVendedor depende apenas do vendedor, não do pedido completo
-    ComissaoVendedor DECIMAL(5,2), -- REGRA 2FNpedido compelto
-    
+    ComissaoVendedor DECIMAL(5,2), -- REGRA 2FN 
 )
 ```
 
@@ -156,6 +160,7 @@ CREATE TABLE PedidosProblematicos (
 <br>
 
 ## Desnormalização (VIEW)
+Propositadamente é induzida a redundância para melhorar performance, sendo usana em cenários de relatórios, análises ráidas, data warehouses etc..
 
 ### Normalização vs Desnormalização
 
@@ -179,11 +184,20 @@ CREATE TABLE PedidosProblematicos (
 Uma view pode ser da maneira que for desejada, uma vez que é uma visualização, ela deverá atender às necessidades para agilidade de consulta entre outras necessidades.
 
 ```sql
--- Tabela normalizada
+-- Tabela normalizada (ideal para transações)
 CREATE TABLE Pedidos (
-    PedidoID INT PRI
-    Cli
-)
+    PedidoID INT PRIMARY KEY,
+    ClienteID INT,
+    DataPedido DATE
+);
+
+-- Tabela desnormalizada (ideal para relatórios)
+CREATE TABLE RelatorioVendasMensal (
+    Mes VARCHAR(7),
+    ClienteNome VARCHAR(100),
+    QtdePedidos INT,
+    TocketMedio DECIMAL(10,2)
+);
 ```
 
 #### Caso prático
