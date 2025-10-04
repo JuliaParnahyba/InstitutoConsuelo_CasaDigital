@@ -1,3 +1,9 @@
+-- Limpeza para reexecução durante os estudos
+TRUNCATE
+  produtos,
+  categoria,
+RESTART IDENTITY CASCADE;
+
 -- ============================================
 -- SEÇÃO 1 — CRIAÇÃO DE 2 TABELAS RELACIONADAS
 -- Objetivo: definir estrutura (DDL) e integridade básica

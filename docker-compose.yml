@@ -12,7 +12,8 @@ services:
       PGDATA: /var/lib/postgresql/data/pgdata
     volumes:
       - ./db_data:/var/lib/postgresql/data
-      - ./modulo01/Aula01_25.09.27/Assincrono/sql:/sql
+      - ./modulo01/Aula00_25.09.20/Assincrono/sql:/sql00
+      - ./modulo01/Aula01_25.09.27/Assincrono/sql:/sql01
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
       interval: 10s
