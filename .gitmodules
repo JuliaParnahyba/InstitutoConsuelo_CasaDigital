@@ -1,0 +1,4 @@
+[submodule "modulo02/projects/edutech-consuelo"]
+	path = modulo02/projects/edutech-consuelo
+	url = https://github.com/JuliaParnahyba/edutech-consuelo.git
+	branch = main
