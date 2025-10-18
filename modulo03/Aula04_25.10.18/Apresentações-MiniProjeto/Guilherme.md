@@ -1,0 +1,1 @@
+Atenção com a quantidade de caracteres nos campos textuais, optando por limitar mesmo em cenários de textos maiores. Pensar no custo e **nunca duvide do usuário**, pensando no consumo do back e do espaço ocupado no bd. 
