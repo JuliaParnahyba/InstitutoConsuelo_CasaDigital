@@ -1,0 +1,44 @@
+h1 {
+    font-size: 2rem;
+    color: #f23456;
+}
+
+.container {
+    display: flex;
+    padding: 1rem;
+    gap: 0.5rem;
+}
+
+.card {
+    width: 400px;
+    background-color: var(--cor-primaria);
+    border: 1px solid #1cf991;
+    border-radius: 4px;
+
+    p {
+        font-size: 1.5rem;
+        color: #ccc;
+    }
+} 
+
+p {
+    font-size: 3rem;
+    color: #d18383;
+}
+
+
+.btn {
+    background-color: aquamarine;
+    padding: 10px 20px;
+    display: flex;
+
+    &__label {
+        background-color: antiquewhite;
+    }
+}
+
+@media (max-width: 727px) {
+    .container {
+        flex-direction: column;
+    }
+}
