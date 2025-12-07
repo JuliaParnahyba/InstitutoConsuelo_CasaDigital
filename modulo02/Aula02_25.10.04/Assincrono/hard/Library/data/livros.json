@@ -1,0 +1,57 @@
+[
+    {
+        "id_livro": 10,
+        "titulo": "O Hobbit",
+        "autor": "J. R. R. Tolkien",
+        "ano": 1937,
+        "disponivel": true,
+        "emprestado_para": null,
+        "data_emprestimo": null,
+        "data_devolucao": "2024-11-25",
+        "quantidade_emprestimos": 1,
+        "historico_emprestimos": [
+            {
+                "id_usuario": 100,
+                "nome_usuario": "Julia",
+                "data_emprestimo": null,
+                "data_devolucao": "2024-11-25"
+            }
+        ]
+    },
+    {
+        "id_livro": 20,
+        "titulo": "O Senhor dos Anéis",
+        "autor": "J. R. R. Tolkien",
+        "ano": 1954,
+        "disponivel": true,
+        "emprestado_para": null,
+        "data_emprestimo": null,
+        "data_devolucao": null,
+        "quantidade_emprestimos": 0,
+        "historico_emprestimos": []
+    },
+    {
+        "id_livro": 30,
+        "titulo": "Fundação",
+        "autor": "Isaac Asimov",
+        "ano": 1951,
+        "disponivel": true,
+        "emprestado_para": null,
+        "data_emprestimo": null,
+        "data_devolucao": null,
+        "quantidade_emprestimos": 0,
+        "historico_emprestimos": []
+    },
+    {
+        "id_livro": 40,
+        "titulo": "Dom Casmurro",
+        "autor": "Machado de Assis",
+        "ano": 1899,
+        "disponivel": true,
+        "emprestado_para": null,
+        "data_emprestimo": null,
+        "data_devolucao": null,
+        "quantidade_emprestimos": 0,
+        "historico_emprestimos": []
+    }
+]

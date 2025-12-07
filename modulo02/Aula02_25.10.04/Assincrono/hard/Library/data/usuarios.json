@@ -1,0 +1,16 @@
+[
+    {
+        "id_usuario": 100,
+        "nome": "Julia",
+        "email": "julia@email.com",
+        "livros_emprestados": [],
+        "historico_emprestimos": [
+            {
+                "id_livro": 10,
+                "titulo": "O Hobbit",
+                "data_emprestimo": null,
+                "data_devolucao": "2024-11-25"
+            }
+        ]
+    }
+]
