@@ -1,0 +1,130 @@
+{
+    "total_alunos": 12,
+    "aprovados": 7,
+    "reprovados": 5,
+    "media_geral": 7.12,
+    "maior_nota": 9.5,
+    "menor_nota": 3.83,
+    "alunos": [
+        {
+            "nome": "Natália Barros",
+            "notas": [
+                8.0,
+                7.5,
+                8.5
+            ],
+            "media": 8.0,
+            "status": "Aprovado"
+        },
+        {
+            "nome": "Otávio Lima",
+            "notas": [
+                6.0,
+                6.5,
+                7.0
+            ],
+            "media": 6.5,
+            "status": "Reprovado"
+        },
+        {
+            "nome": "Paula Nunes",
+            "notas": [
+                9.5,
+                9.0,
+                10.0
+            ],
+            "media": 9.5,
+            "status": "Aprovado"
+        },
+        {
+            "nome": "Rafael Costa",
+            "notas": [
+                4.0,
+                4.5,
+                5.0
+            ],
+            "media": 4.5,
+            "status": "Reprovado"
+        },
+        {
+            "nome": "Sofia Martins",
+            "notas": [
+                7.0,
+                7.0,
+                7.0
+            ],
+            "media": 7.0,
+            "status": "Aprovado"
+        },
+        {
+            "nome": "Thiago Oliveira",
+            "notas": [
+                5.5,
+                5.0,
+                6.0
+            ],
+            "media": 5.5,
+            "status": "Reprovado"
+        },
+        {
+            "nome": "Ursula Freitas",
+            "notas": [
+                8.5,
+                8.0,
+                8.0
+            ],
+            "media": 8.17,
+            "status": "Aprovado"
+        },
+        {
+            "nome": "Victor Santos",
+            "notas": [
+                3.0,
+                4.0,
+                4.5
+            ],
+            "media": 3.83,
+            "status": "Reprovado"
+        },
+        {
+            "nome": "William Rocha",
+            "notas": [
+                9.0,
+                8.5,
+                9.5
+            ],
+            "media": 9.0,
+            "status": "Aprovado"
+        },
+        {
+            "nome": "Xuxa Carvalho",
+            "notas": [
+                6.5,
+                7.0,
+                6.0
+            ],
+            "media": 6.5,
+            "status": "Reprovado"
+        },
+        {
+            "nome": "Yuri Fagundes",
+            "notas": [
+                7.5,
+                8.0,
+                7.0
+            ],
+            "media": 7.5,
+            "status": "Aprovado"
+        },
+        {
+            "nome": "Zoe Pereira",
+            "notas": [
+                10.0,
+                9.5,
+                9.0
+            ],
+            "media": 9.5,
+            "status": "Aprovado"
+        }
+    ]
+}

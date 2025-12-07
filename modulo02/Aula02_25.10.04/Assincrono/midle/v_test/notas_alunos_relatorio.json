@@ -1,0 +1,110 @@
+{
+    "total_alunos": 10,
+    "aprovados": 6,
+    "reprovados": 4,
+    "media_geral": 7.03,
+    "maior_nota": 9.5,
+    "menor_nota": 4.17,
+    "alunos": [
+        {
+            "nome": "Ana Silva",
+            "notas": [
+                8.5,
+                7.0,
+                9.0
+            ],
+            "media": 8.17,
+            "status": "Aprovado"
+        },
+        {
+            "nome": "Bruno Costa",
+            "notas": [
+                5.0,
+                6.0,
+                5.5
+            ],
+            "media": 5.5,
+            "status": "Reprovado"
+        },
+        {
+            "nome": "Carla Mendes",
+            "notas": [
+                9.0,
+                8.0,
+                9.5
+            ],
+            "media": 8.83,
+            "status": "Aprovado"
+        },
+        {
+            "nome": "Diego Rocha",
+            "notas": [
+                4.0,
+                5.0,
+                6.0
+            ],
+            "media": 5.0,
+            "status": "Reprovado"
+        },
+        {
+            "nome": "Elisa Souza",
+            "notas": [
+                7.0,
+                7.5,
+                8.0
+            ],
+            "media": 7.5,
+            "status": "Aprovado"
+        },
+        {
+            "nome": "Fábio Teles",
+            "notas": [
+                6.0,
+                6.5,
+                6.0
+            ],
+            "media": 6.17,
+            "status": "Reprovado"
+        },
+        {
+            "nome": "Gabriela Reis",
+            "notas": [
+                10.0,
+                9.5,
+                9.0
+            ],
+            "media": 9.5,
+            "status": "Aprovado"
+        },
+        {
+            "nome": "Hugo Martins",
+            "notas": [
+                3.5,
+                4.0,
+                5.0
+            ],
+            "media": 4.17,
+            "status": "Reprovado"
+        },
+        {
+            "nome": "Isabela Lopes",
+            "notas": [
+                8.0,
+                8.5,
+                8.0
+            ],
+            "media": 8.17,
+            "status": "Aprovado"
+        },
+        {
+            "nome": "João Pedro",
+            "notas": [
+                7.5,
+                7.0,
+                7.5
+            ],
+            "media": 7.33,
+            "status": "Aprovado"
+        }
+    ]
+}

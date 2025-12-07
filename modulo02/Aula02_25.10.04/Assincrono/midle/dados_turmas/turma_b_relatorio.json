@@ -1,0 +1,90 @@
+{
+    "total_alunos": 8,
+    "aprovados": 4,
+    "reprovados": 4,
+    "media_geral": 6.79,
+    "maior_nota": 9.5,
+    "menor_nota": 4.17,
+    "alunos": [
+        {
+            "nome": "Fábio Teles",
+            "notas": [
+                6.0,
+                6.5,
+                6.0
+            ],
+            "media": 6.17,
+            "status": "Reprovado"
+        },
+        {
+            "nome": "Gabriela Reis",
+            "notas": [
+                10.0,
+                9.5,
+                9.0
+            ],
+            "media": 9.5,
+            "status": "Aprovado"
+        },
+        {
+            "nome": "Hugo Martins",
+            "notas": [
+                3.5,
+                4.0,
+                5.0
+            ],
+            "media": 4.17,
+            "status": "Reprovado"
+        },
+        {
+            "nome": "Isabela Lopes",
+            "notas": [
+                8.0,
+                8.5,
+                8.0
+            ],
+            "media": 8.17,
+            "status": "Aprovado"
+        },
+        {
+            "nome": "João Pedro",
+            "notas": [
+                7.5,
+                7.0,
+                7.5
+            ],
+            "media": 7.33,
+            "status": "Aprovado"
+        },
+        {
+            "nome": "Karen Silva",
+            "notas": [
+                9.0,
+                9.5,
+                8.5
+            ],
+            "media": 9.0,
+            "status": "Aprovado"
+        },
+        {
+            "nome": "Lucas Almeida",
+            "notas": [
+                5.5,
+                6.0,
+                5.0
+            ],
+            "media": 5.5,
+            "status": "Reprovado"
+        },
+        {
+            "nome": "Mariana Dias",
+            "notas": [
+                4.5,
+                5.0,
+                4.0
+            ],
+            "media": 4.5,
+            "status": "Reprovado"
+        }
+    ]
+}
